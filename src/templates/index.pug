@@ -1,0 +1,91 @@
+extends layout
+
+block header
+  figure
+    img(src=QRcode alt='wechat-QR-code')
+  .header-group 
+    h1=name
+    h3='应聘岗位：' + position
+
+block skills
+  section.skills
+    h2.sub-header 专业技能
+    ul.wrapper
+      each item in skills
+        li.item
+          .skill-name=item.name
+            .skill-bar
+              .value(style='width:' + item.value +'%')
+
+block contacts
+  section.contacts
+    h2.sub-header 联系方式
+    ul.wrapper
+        if contacts.mail
+          li.item
+            a(href=contacts.mail.href)
+                span::before.level2.fi.flaticon-mail
+                .content=contacts.mail.value
+        if contacts.github
+          li.item
+            a(href=contacts.github.href)
+                span::before.level2.fi.flaticon-github
+                .content=contacts.github.value
+        if contacts.homepage
+          li.item
+            a(href=contacts.homepage.href)
+                span::before.level2.fi.flaticon-home
+                .content=contacts.homepage.value
+        if contacts.mobile
+          li.item
+            a(href=contacts.mobile.href)
+                span::before.level2.fi.flaticon-mobile
+                .content=contacts.mobile.value
+
+block experiences
+  section
+    .title-wrapper
+      span::before.level1.fi.flaticon-design
+      h2 项目经验
+    ul.wrapper
+      each item in experiences
+        li.item
+          h3=item.title.name
+            span.link-wrapper
+              a(href=item.title.source)
+                span::before.level3.fi.flaticon-link
+                span=item.title.address
+          each passage in item.contents
+            p=passage
+            
+
+block others
+  section
+    .title-wrapper
+      span::before.level1.fi.flaticon-piece
+      h2 其他  
+    ul.wrapper
+      each item in others        
+        li.item=item
+
+block education
+  section
+    .title-wrapper
+      span::before.level1.fi.flaticon-education
+      h2 教育背景
+    ul.wrapper
+      each item in education
+        li.item.flex
+          span=item.university 
+          span=item.major
+
+block certificate
+      section
+        .title-wrapper
+          span::before.level1.fi.flaticon-cert
+          h2 相关证书
+        ul.wrapper
+          each item in certificate
+            li.item.flex
+              span=item.name
+              span=item.grade

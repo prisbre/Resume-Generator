@@ -1,0 +1,127 @@
+{
+  "Author": "Huanfeng Chen",
+  "Guide": [
+    "按格式填写即可",
+    "PDF会自动生成在 dist/assets 文件夹里"
+  ],
+  "title": "四提口济的简历",
+  "QRcode": "../assets/wechat.svg",
+  "name": "张常达",
+  "position": "没管期世金强心",
+  "aside": [
+    {
+      "href": "https://github.com/...",
+      "content": "源代码"
+    },
+    {
+      "href": "./assets/resume.pdf",
+      "content": "PDF下载"
+    }
+  ],
+  "contacts": {
+    "mail": {
+      "href": "mailto://",
+      "value": "yourname@gmail.com"
+    },
+    "github": {
+      "href": "https://github.com/yourgithub",
+      "value": "github.com/yourgithub"
+    },
+    "homepage": {
+      "href": "https://yourgithub.github.io",
+      "value": "yourgithub.github.io"
+    },
+    "mobile": {
+      "href": "tel:13888888888",
+      "value": "13888888888"
+    }
+  },
+  "education": [
+    {
+      "university": "决油任方山",
+      "major": "转元了合他结"
+    },
+    {
+      "university": "时露柜感否",
+      "major": "记米极难教太"
+    }
+  ],
+  "certificate": [
+    {
+      "name": "大整于年那",
+      "grade": "收量率六"
+    },
+    {
+      "name": "油十却于年那证",
+      "grade": "收量率"
+    },
+    {
+      "name": "问连活应",
+      "grade": "历作划等直"
+    }
+  ],
+  "skills": [
+    {
+      "name": "先合达素",
+      "value": "90"
+    },
+    {
+      "name": "信指越",
+      "value": "85"
+    },
+    {
+      "name": "信须较属",
+      "value": "70"
+    },
+    {
+      "name": "口北将过",
+      "value": "70"
+    },
+    {
+      "name": "九指值利通",
+      "value": "60"
+    }
+  ],
+  "experiences": [
+    {
+      "title": {
+        "name": "易六斯身质",
+        "address": "yourname.github.io/project",
+        "source": "https://github.com/yourname/project"
+      },
+      "contents": [
+        "平利大整于年那证联",
+        "清较六她命由业，间除第太装人，往论A型到图。 论工别存受育就习影历即，没管期世金强心流民带，走件承商雨革7学伸。 规员运结百学口常果度低同计几法，点口则又铁确论屈壳程前S传。 学方众题线府部除验广业，关素断千立才完备因，当米隶住届布位建府。其王社油十却门北飞全，容之并市圆别府将，老建H那重业论毛。 "
+      ]
+    },
+    {
+      "title": {
+        "name": "此理片名生照",
+        "address": "yourname.github.io/project",
+        "source": "https://github.com/yourname/project"
+      },
+      "contents": [
+        " 起图车间几第，术眼条义记两，象杨极满。 导可西量长造领始听，济先前行入则按头现，生孤点无走连。 公族值技和候必南按军，工段新院劳求斯段着长，件市R实报安问口。 完形只天条亲第可命车战十，利斯花候全切据或对少干，有铁-串东水石器再县。 片许交准定十们性也，教院团身建其是道。 专它子容出由收间走，须消员料Z估争。话做族内再活叫复根运律正将导多今议保，八经影算太七式屈才商僚号严听深。 问达面心口北将过水段算只目，品第心五表片M状水量J是。"
+      ]
+    },
+    {
+      "title": {
+        "name": "力资体斯感根关",
+        "address": "yourname.github.io/project",
+        "source": "https://github.com/yourname/project"
+      },
+      "contents": [
+        "八经影算太七式",
+        "展南战济内干信须较属适龙议，年因置计性村安吼到况。 做争月质点每正之回需山使，解变质九指值利通化况据小，社市陕建快阶矿-非解。 身水是导团南研命属万商证，儿义类率际L但极建投。 决油转元了合他结计层，收量率六历作划等直，有义增改人本8。 美回变府才类石，便出究学体美带，亲村听众事。 形前实路离土包只在，象积县林反商受深，其研录水批团芬。"
+      ]
+    }
+  ],
+  "others": [
+    "究政江细所还地易利一除同，值算候影事刷料从葡僚",
+    "该属二战金毛需心布九，技论现2应",
+    "展南战济内干信须较属适龙议，年因置计性村安吼到况",
+    "标代委因合别维四山安，活道指同研斯使",
+    "划例容出成变，到物还集少，很村茄二",
+    "美回变府才类石，便出究学体美带"
+  ]
+}

@@ -1,0 +1,35 @@
+doctype html
+html(lang='zh-cn')
+  head
+    meta(charset='UTF-8')
+    title=title
+    meta(name='viewport', content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0')
+    //- link(href="assets/fonts/Flaticon.css" type='text/css',rel="stylesheet")
+    //- link(rel='stylesheet', type='text/css', href='http://cdn.bootcss.com/normalize/4.1.1/normalize.min.css')
+  body
+    if aside  
+      aside.no-print
+        ul.links-
+          each val in aside
+            li.link
+              a(href=val.href target="_blank")=val.content
+    main
+      article.left
+        block header
+        block skills
+        block contacts
+      article.right
+        if experiences
+          block experiences
+        if others
+            block others
+        if education
+            block education
+        if certificate
+          block certificate
+    footer.no-print
+      p
+        a(href='https://github.com/prisbre/') Static Resume Generator 
+        | by 
+        a(href='javascript:void') Huanfeng Chen
+        | . MIT License.
