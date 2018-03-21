@@ -48,7 +48,7 @@
 
 ## 截图
 
-<img src="https://github.com/prisbre/Resume-Generator/blob/master/preview.jpg" width="375px" style="display:inline;">
+<img src="https://github.com/prisbre/Resume-Generator/blob/master/preview.png" width="375px" style="display:inline;">
 
 ##	License
 
