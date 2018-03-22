@@ -9,7 +9,7 @@ $right: #f3f1f2;
 /*
  *****************font***************
  */
-@font-face {
+ @font-face {
   font-family: "Flaticon";
   src: url(../assets/fonts/Flaticon.ttf);
   font-weight: normal;
@@ -28,50 +28,39 @@ $right: #f3f1f2;
   text-transform: none;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-
   // font-smoothing: antialiased;
 }
 
 .flaticon-cert:before {
   content: "\f100";
 }
-
 .flaticon-design:before {
   content: "\f101";
 }
-
 .flaticon-education:before {
   content: "\f102";
 }
-
 .flaticon-github:before {
   content: "\f103";
 }
-
 .flaticon-home:before {
   content: "\f104";
 }
-
 .flaticon-link:before {
   content: "\f105";
 }
-
 .flaticon-mail:before {
   content: "\f106";
 }
-
 .flaticon-mobile:before {
   content: "\f107";
 }
-
 .flaticon-piece:before {
   content: "\f108";
 }
-
 .flaticon-skill:before {
   content: "\f109";
 }
-
 .flaticon-work:before {
   content: "\f10a";
 }
@@ -81,45 +70,44 @@ $right: #f3f1f2;
  */
 * {
   margin: 0;
-  padding: 0;
-  font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif,"宋体";
+	padding: 0;
+	font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif,"宋体";
 }
-
 html,
 body {
-  width: 100%;
+	width: 100%;
   height: 100%;
 }
-
 main {
   width: 1000px;
   height: 1414px;
-  margin: 0 auto;
-  box-sizing: border-box;
+  margin: 0 auto;  
+  box-sizing: border-box;	
   display: flex;
   box-shadow: 2px 2px 5px;
-
-  @include media("<=desktop") {
-    width: 100%;
-    height: auto;
-    flex-wrap: wrap;
-    margin: 0;
+  @include media(">=desktop") {
+    width: 1000px;
+  }
+  @include media(">=tablet", "<=desktop") {
+    width: 750px;
+  }
+  @include media("<=phone") {
+    margin-top: 0;
+    padding: 5px 0;
     box-shadow: 0 0 0;
   }
-
-
   @include media("print") {
     margin-top: 0;
     box-shadow: 0 0 0;
-    flex-wrap: wrap;
   }
 }
 
-@media print {
-  .no-print {
-    display: none;
+@media print{
+  .no-print{
+      display:none;
   }
 }
+
 
 ul {
   list-style: none;
@@ -132,11 +120,9 @@ ul {
   align-content: center;
   margin-right: 20px;
 }
-
 .level2.fi:before {
   font-size: 25px;
 }
-
 .level3.fi:before {
   margin-right: 5px;
 }
@@ -155,27 +141,22 @@ aside {
   z-index: 2;
   display: bolck;
 
-  @include media("<=desktop") {
-    display: none;
-  }
-
-
   ul {
-    list-style: none;
+      list-style: none;
 
-    li {
-      margin-bottom: 10px;
-      border-radius: 10px 0px 0px 10px;
-      background: $left;
+      li {
+          margin-bottom: 10px;
+          border-radius: 10px 0px 0px 10px;
+          background: $left;
 
-      a {
-        width: 80px;
-        height: 40px;
-        line-height: 40px;
-        padding: 0px 15px;
-        color: $right;
+          a {
+              width: 80px;
+              height: 40px;
+              line-height: 40px;
+              padding: 0px 15px;
+              color: $right;
+          }
       }
-    }
   }
 }
 
@@ -187,13 +168,7 @@ aside {
   background-color: $left;
   color: $right;
   padding: 60px;
-  box-sizing: border-box;
-
-  @include media("<=desktop") {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
+  box-sizing: border-box;  
 }
 
 figure {
@@ -215,15 +190,13 @@ img {
   display: block;
   text-align: center;
   padding-bottom: 30px;
-  border-bottom: 1px solid $right;
+  border-bottom: 1px solid  $right;
 }
-
 h1 {
   font-size: 40px;
   font-weight: 700;
   margin: 30px 0;
 }
-
 .sub-header {
   text-align: center;
 }
@@ -237,28 +210,13 @@ h1 {
     width: 100%;
     margin: 20px 0;
     align-content: center;
-
-    @include media("<=desktop") {
-      width: 50%;
-    }
-
-
-    @include media("<=tablet") {
-      width: 100%;
-    }
   }
 }
 
 .wrapper {
   width: 100%;
   margin: 20px 0;
-
-  @include media("<=desktop") {
-    display: flex;
-    flex-wrap: wrap;
-  }
 }
-
 .item {
   width: 100%;
   margin: 15px 0;
@@ -285,40 +243,20 @@ h1 {
 
 .contacts {
   width: 260px;
-  position: absolute;
-  top: 1150px;
+	position: absolute;
+	top: 1150px;
   box-sizing: border-box;
 
-  @include media("<=desktop") {
-    width: 100%;
-    position: relative;
-    top: 0;
-  }
-
-
   .item {
-    width: 100%;
-    box-sizing: border-box;
+		width: 100%;
+		box-sizing: border-box;		
     margin: 15px 0;
-
-    @include media("<=desktop") {
-      width: 50%;
-      margin: 15px 0;
-      padding: 0 50px;
-      border-left: 2px solid $right;
-    }
-
-
-    @include media("<=tablet") {
-      width: 100%;     
-    }
-
 
     a {
       width: 100%;
       display: flex;
-      box-sizing: border-box;
-      padding: 0 10px;
+			box-sizing: border-box;
+			padding: 0 10px;			
       font-weight: 400;
       color: $right;
       justify-content: space-between;
@@ -339,13 +277,7 @@ h1 {
   background-color: $right;
   color: $left;
   padding: 40px 60px 60px;
-  box-sizing: border-box;
-
-  @include media("<=desktop") {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
+  box-sizing: border-box;  
 }
 
 .title-wrapper {
@@ -375,7 +307,6 @@ li h3 {
   border-radius: 5px;
   border: 1px solid $left;
 }
-
 .flex {
   display: flex;
   justify-content: space-between;
@@ -385,25 +316,17 @@ li h3 {
  *****************footer***************
  */
 footer {
-  width: 100%;
   margin: 15px 6px;
-
-  @include media("<=desktop") {
-
-  }
-
   @include media("print") {
     display: none;
   }
-
-
   a {
     font-weight: 700;
     text-decoration: none;
     color: $left;
   }
-
   p {
     text-align: center;
   }
 }
+

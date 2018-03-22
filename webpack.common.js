@@ -19,7 +19,6 @@ module.exports = {
           {
             loader: 'pug-html-loader',
             query: {
-              pretty: '  ',
               exports: false,
               debug: false,
               compileDebug: false,

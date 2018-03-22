@@ -5,6 +5,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const common = require('./webpack.common.js');
 const src = path.join(__dirname, 'src');
 var OpenBrowserPlugin = require('open-browser-webpack-plugin');
+const HtmlPdfPlugin = require('html-pdf-plugin')
 
 module.exports = merge(common, {
   devtool: 'inline-source-map',
@@ -22,7 +23,18 @@ module.exports = merge(common, {
     new OpenBrowserPlugin({
       url: 'http://localhost:80'
     }),
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.HotModuleReplacementPlugin(),
+    new HtmlPdfPlugin({
+      url: 'http://localhost:80',
+      path: path.join(src, 'assets'),
+      filename: 'resume.pdf',
+      viewport: {
+        width: 1440,
+        height: 900
+      },
+      format: 'A4',
+      printBackground: true
+    })
   ],
   devServer: {
     host: process.env.HOST,  // 'localhost'

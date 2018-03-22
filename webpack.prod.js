@@ -4,7 +4,6 @@ const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const common = require('./webpack.common.js');
 const src = path.join(__dirname, 'src');
 const dist = path.join(__dirname, 'dist');
-const HtmlPdfPlugin = require('html-pdf-plugin')
 
 module.exports = merge(common, {
   entry: path.join(src, 'js/index.prod.js'),
@@ -13,14 +12,15 @@ module.exports = merge(common, {
     publicPath: '',
     filename: 'js/[name].[hash].bundle.js',
   },
+  module: {
+    rules: [
+      {
+        test: /\.pdf$/,
+        loader: 'file-loader?name=./assets/[name].[ext]'
+      },
+    ]
+  },
   plugins: [
     new UglifyJSPlugin(),
-    new HtmlPdfPlugin({
-      url: path.join(dist, 'index.html'),
-      path: path.join(dist, 'assets'),
-      filename: 'resume.pdf',
-      format: 'A4',
-      printBackground: true
-    })
   ]
 });

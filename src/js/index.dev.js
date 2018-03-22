@@ -1,2 +1,1 @@
-require('../sass/style.scss')
-
+require('../sass/style.print.scss')

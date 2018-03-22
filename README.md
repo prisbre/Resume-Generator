@@ -1,9 +1,10 @@
 简历生成器
 ==========================
 
-- 基于 Webpack 构建静态页面
-- 采用 Pug 编写 HTML 模板，用 Sass 预编译样式，由 Webpack 构建整个开发打包流程，驱动页面自动生成，架设本地服务器测试。
+- 基于 Webpack 构建响应式页面
+- 采用 Pug 编写 HTML 模板， Sass 预编译样式，由 Webpack 构建整个开发打包流程，驱动页面自动生成，架设本地服务器测试。
 - 调用 html-pdf-plugin 生成 PDF。
+
 
 ## 配置
 
@@ -18,7 +19,7 @@
 
 - 按提示填写 `info.json`
 - 将 `src\assets\wechat.svg` 换成自己的照片或二维码，注意 `info.json QRcode` 处文件路径保持一致
-- 运行 `npm run start`，将启动环境自动打开 `http://localhost:80/` 预览简历效果
+- 运行 `npm run start`，将启动环境自动打开 `http://localhost:80/` 预览简历效果，并生成 PDF 文件到 `src\assets` 文件夹
 - 运行 `npm run build`，打包生产环境文件，可在 `dist` 文件夹查看
 
 ## 结构
