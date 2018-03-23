@@ -2,7 +2,8 @@
   "Author": "Huanfeng Chen",
   "Guide": [
     "按格式填写即可",
-    "PDF会自动生成在 dist/assets 文件夹里"
+    "PDF会自动生成在 src/assets 文件夹",
+    "运行 npm run build 后，PDF 打包到 dist/assets 文件夹"
   ],
   "title": "四提口济的简历",
   "QRcode": "../assets/wechat.svg",

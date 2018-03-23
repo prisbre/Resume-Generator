@@ -375,6 +375,20 @@ li h3 {
   border-radius: 5px;
   border: 1px solid $left;
 }
+#tablet {
+  @include media("<=tablet") {
+    display: none;
+  }
+}
+#phone {
+  @include media("<=phone") {
+    display: initial;
+  }
+  @include media(">=phone") {
+    display: none;
+  }
+}
+
 
 .flex {
   display: flex;

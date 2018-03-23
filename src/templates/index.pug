@@ -54,7 +54,8 @@ block experiences
             span.link-wrapper
               a(href=item.title.source)
                 span::before.level3.fi.flaticon-link
-                span=item.title.address
+                span#tablet=item.title.address
+                span#phone 源码
           each passage in item.contents
             p=passage
             
